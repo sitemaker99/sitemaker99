@@ -62,8 +62,8 @@ const sitemaker99 = {
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=sitemaker99&show_icons=true&theme=black_ice&hide_border=true&bg_color=000000&title_color=FFFFFF&icon_color=FFFFFF&text_color=FFFFFF&ring_color=FFFFFF"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sitemaker99&layout=compact&theme=black_ice&hide_border=true&bg_color=000000&title_color=FFFFFF&text_color=FFFFFF"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=sitemaker99&show_icons=true&theme=dark&hide_border=true&bg_color=000000&title_color=FFFFFF&icon_color=FFFFFF&text_color=FFFFFF&ring_color=FFFFFF"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sitemaker99&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=FFFFFF&text_color=FFFFFF"/>
 
 <br/>
 
@@ -78,7 +78,7 @@ const sitemaker99 = {
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sitemaker99&theme=black-ice&hide_border=true&bg_color=000000&color=FFFFFF&line=FFFFFF&point=FFFFFF&area=true&area_color=FFFFFF"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=sitemaker99&theme=react&hide_border=true&bg_color=000000&color=FFFFFF&line=FFFFFF&point=FFFFFF&area=true&area_color=FFFFFF"/>
 
 </div>
 
@@ -131,10 +131,10 @@ const sitemaker99 = {
 <div align="center">
 
 <a href="https://github.com/sitemaker99/Kurovexa">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=sitemaker99&repo=Kurovexa&theme=black_ice&hide_border=true&bg_color=000000&title_color=FFFFFF&text_color=FFFFFF&icon_color=FFFFFF"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=sitemaker99&repo=Kurovexa&theme=dark&hide_border=true&bg_color=000000&title_color=FFFFFF&text_color=FFFFFF&icon_color=FFFFFF"/>
 </a>
 <a href="https://github.com/sitemaker99/About-me">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=sitemaker99&repo=About-me&theme=black_ice&hide_border=true&bg_color=000000&title_color=FFFFFF&text_color=FFFFFF&icon_color=FFFFFF"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=sitemaker99&repo=About-me&theme=dark&hide_border=true&bg_color=000000&title_color=FFFFFF&text_color=FFFFFF&icon_color=FFFFFF"/>
 </a>
 
 </div>
