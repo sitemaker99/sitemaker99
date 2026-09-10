@@ -1,0 +1,60 @@
+name: Auto-Update Profile
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # runs every 6 hours
+  workflow_dispatch:         # lets you trigger it manually from the Actions tab
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+
+  # 1) Regenerates the contribution "snake" animation and pushes it to the
+  #    output branch that the README's snake <img> tag points to.
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate snake animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: sitemaker99
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg
+
+      - name: Push output to "output" branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # 2) Regenerates metrics.svg (the full dashboard: languages, habits,
+  #    isometric calendar, achievements) and commits it straight to main.
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: metrics.svg
+          template: classic
+          base: "header, activity, community, repositories, metadata"
+          plugin_achievements: yes
+          plugin_habits: yes
+          plugin_isocalendar: yes
+          plugin_languages: yes
+
+  # 3) Rewrites the "Recent Activity" section of README.md between the
+  #    <!--START_SECTION:activity--> / <!--END_SECTION:activity--> markers.
+  activity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
