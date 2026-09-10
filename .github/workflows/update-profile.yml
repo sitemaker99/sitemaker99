@@ -39,9 +39,9 @@ jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: sitemaker99/metrics@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.svg
           template: classic
           base: "header, activity, community, repositories, metadata"
